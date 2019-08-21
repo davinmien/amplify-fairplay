@@ -1,4 +1,9 @@
 <template>
+<div>
+  <div id="video" class="video-player">
+    Welcome to VueTube
+  </div>
+
   <div id="app" class="hello">
 
     <h1>Fair Play</h1>
@@ -21,6 +26,7 @@
       <p>Questions? Ask <a href="mailto:davmien+davlab@amazon.com?Subject=Fair%20Play" target="_top">Davin</a>.</p>
     </b-row>
   </div>
+</div>
 </template>
 
 
@@ -57,9 +63,16 @@ export default {
     setInterval(this.updateVotes, 3000)
   }
 }
+export default {
+  name: 'VideoPlayer',
+  data () {
+    return {
+    }
+  }
+}
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
