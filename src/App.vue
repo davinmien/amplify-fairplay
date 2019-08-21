@@ -29,13 +29,10 @@
 import { API } from 'aws-amplify'
 import VideoPlayer from './components/VideoPlayer'
 export default {
-  name: 'App',
+  name: 'app',
   components: {
     VideoPlayer
-  }
-}
-export default {
-  name: 'app',
+  },
   data() {
     return {
       apiName: 'pollCounterAPI',
@@ -65,7 +62,6 @@ export default {
     setInterval(this.updateVotes, 3000)
   }
 }
-
 </script>
 
 <style>
