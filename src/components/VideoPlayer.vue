@@ -1,26 +1,26 @@
 <template>
-    <div class="video-player">
-        <div class="video-container">
-            <iframe width="640" height="360" :src="this.activeVideo.youtubeURL" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <h3>{{this.activeVideo.title}}</h3>
-            <div class="row">
-                <p>{{this.activeVideo.views}} views</p> 
-                <p>{{this.activeVideo.likes}} <button>Like</button></p>
-            </div>
-        </div>
-        <div class="video-list">
-            <div :key="video.id" v-for="video in videos" class="thumbnail">
-                <div class="thumbnail-img">
-                    <img :src="video.thumbnail" />
-                </div>
-                <div class="thumbnail-info">
-                    <h3>{{video.title}}</h3>
-                    <p>{{video.creator}}</p>
-                    <p class="thumbnail-views">{{video.views}} Views</p>
-                </div>
-            </div>
+  <div class="video-player">
+    <div class="video-container">
+      <iframe width="640" height="360" :src="this.activeVideo.youtubeURL" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h3>{{this.activeVideo.title}}</h3>
+        <div class="row">
+          <p>{{this.activeVideo.views}} views</p> 
+          <p>{{this.activeVideo.likes}} <button>Like</button></p>
         </div>
     </div>
+    <div class="video-list">
+      <div :key="video.id" v-for="video in videos" class="thumbnail">
+        <div class="thumbnail-img">
+          <img :src="video.thumbnail" />
+        </div>
+        <div class="thumbnail-info">
+          <h3>{{video.title}}</h3>
+          <p>{{video.creator}}</p>
+          <p class="thumbnail-views">{{video.views}} Views</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -76,6 +76,7 @@ let videos = [
     views: 0
   }
 ];
+
 export default {
   name: 'VideoPlayer',
   data () {
@@ -83,13 +84,13 @@ export default {
         videos,
         activeVideo: videos[0]
     }
-    methods:{
-        chooseVideo(video){
-        //SET VIDEO AS ACTIVE VIDEO
-        this.activeVideo = video;
-        //INCREASE THE VIDEOS VIEWS BY 1
-        video.views += 1;
-        }
+  },
+  methods: {
+    chooseVideo(video){
+      //SET VIDEO AS ACTIVE VIDEO
+      this.activeVideo = video;
+      //INCREASE THE VIDEOS VIEWS BY 1
+      video.views += 1;
     }
   }
 }
