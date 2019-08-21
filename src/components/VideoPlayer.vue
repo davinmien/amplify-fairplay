@@ -2,6 +2,11 @@
     <div class="video-player">
         <div class="video-container">
             <iframe width="640" height="360" :src="this.activeVideo.youtubeURL" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h3>{{this.activeVideo.title}}</h3>
+            <div class="row">
+                <p>{{this.activeVideo.views}} views</p> 
+                <p>{{this.activeVideo.likes}} <button>Like</button></p>
+            </div>
         </div>
         <div class="video-list">
             <div :key="video.id" v-for="video in videos" class="thumbnail">
@@ -75,8 +80,16 @@ export default {
   name: 'VideoPlayer',
   data () {
     return {
-        videos
+        videos,
         activeVideo: videos[0]
+    }
+    methods:{
+        chooseVideo(video){
+        //SET VIDEO AS ACTIVE VIDEO
+        this.activeVideo = video;
+        //INCREASE THE VIDEOS VIEWS BY 1
+        video.views += 1;
+        }
     }
   }
 }
@@ -106,5 +119,26 @@ p{
 
 .thumbnail-views{
     font-size:14px;
+}
+.video-player{
+    display:flex;
+    width:1200px;
+    margin:auto;
+}
+
+.video-container{
+    margin-right:40px;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+}
+
+button{
+    background:#D0021B;
+    color:white;
+    border:none;
+    padding:10px 20px;
 }
 </style>
