@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/votes",
+            "lambdaFunction": "pollCounterFunction",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "pollCounterAPI",
+    "apiName": "pollCounterAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "pollCounterFunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "fairplay-dev-20190820234410-authRole",
+        "unAuthRoleName": "fairplay-dev-20190820234410-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "pollCounterFunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

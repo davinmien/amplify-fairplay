@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "fairplay-dev-20190820234410-authRole",
+            "UnauthRoleArn": "arn:aws:iam::728498013600:role/fairplay-dev-20190820234410-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::728498013600:role/fairplay-dev-20190820234410-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "fairplay-dev-20190820234410-deployment",
+            "UnauthRoleName": "fairplay-dev-20190820234410-unauthRole",
+            "StackName": "fairplay-dev-20190820234410",
+            "StackId": "arn:aws:cloudformation:us-east-1:728498013600:stack/fairplay-dev-20190820234410/5169ac70-c3ce-11e9-8500-0aab6c3cae14"
+        }
+    }
+}
