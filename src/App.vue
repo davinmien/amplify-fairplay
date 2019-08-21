@@ -1,14 +1,10 @@
 <template>
-<div>
-  <div id="video" class="video-player">
-    Welcome to VueTube
-  </div>
-
   <div id="app" class="hello">
 
     <h1>Fair Play</h1>
     <h4>make the call.</h4>
-
+    <VideoPlayer/>
+    
     <b-row align-h="center" class="mt-5">
       <b-card-group deck>
         <b-card bg-variant="success" text-variant="white" header="Vote Fair" class="text-center" footer-tag="footer">
@@ -26,12 +22,18 @@
       <p>Questions? Ask <a href="mailto:davmien+davlab@amazon.com?Subject=Fair%20Play" target="_top">Davin</a>.</p>
     </b-row>
   </div>
-</div>
 </template>
 
 
 <script>
 import { API } from 'aws-amplify'
+import VideoPlayer from './components/VideoPlayer'
+export default {
+  name: 'App',
+  components: {
+    VideoPlayer
+  }
+}
 export default {
   name: 'app',
   data() {
@@ -63,16 +65,10 @@ export default {
     setInterval(this.updateVotes, 3000)
   }
 }
-export default {
-  name: 'VideoPlayer',
-  data () {
-    return {
-    }
-  }
-}
+
 </script>
 
-<style scoped>
+<style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
