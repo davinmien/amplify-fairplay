@@ -20,8 +20,8 @@ let videos = [
       "https://d3am56o2kzlvb7.cloudfront.net/6856711c-f0ad-4f10-8f4d-711b8183db8c/thumbnails/testvid-01_tumb.0000030.jpg",
     youtubeURL: "https://d3am56o2kzlvb7.cloudfront.net/6856711c-f0ad-4f10-8f4d-711b8183db8c/mp4/testvid-01_Mp4_Avc_Aac_16x9_1280x720p_24Hz_4.5Mbps_qvbr.mp4",
     creator: "Football League",
-    likes: 0,
-    views: 0
+    likes: 7,
+    views: 2390
   },
   {
     id: 2,
@@ -118,7 +118,7 @@ p{
 }
 
 .video-container{
-    margin-right:40px;
+  margin:auto;
 }
 
 .row{
