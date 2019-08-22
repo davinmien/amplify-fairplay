@@ -8,6 +8,7 @@
         <p>{{this.activeVideo.likes}} <button>Like</button></p>
       </div>
     </div>
+    <div class="row">
     <div class="video-list">
       <div @click="chooseVideo(video)" :key="video.id" v-for="video in videos" class="thumbnail">
         <div class="thumbnail-img">
@@ -19,6 +20,7 @@
           <p class="thumbnail-views">{{video.views}} Views</p>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -106,6 +108,8 @@ export default {
 
 .thumbnail-info{
     margin-left:20px;
+    text-align: left;
+
 }
 
 .thumbnail h3{
