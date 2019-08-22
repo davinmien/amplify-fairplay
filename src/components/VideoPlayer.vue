@@ -8,20 +8,6 @@
         <p>{{this.activeVideo.likes}} <button>Like</button></p>
       </div>
     </div>
-    <div class="row">
-    <div class="video-list">
-      <div @click="chooseVideo(video)" :key="video.id" v-for="video in videos" class="thumbnail">
-        <div class="thumbnail-img">
-          <img :src="video.thumbnail" />
-        </div>
-        <div class="thumbnail-info">
-          <h3>{{video.title}}</h3>
-          <p>{{video.creator}}</p>
-          <p class="thumbnail-views">{{video.views}} Views</p>
-        </div>
-      </div>
-    </div>
-    </div>
   </div>
 </template>
 
@@ -29,11 +15,11 @@
 let videos = [
   {
     id: 1,
-    title: "18-core iMac Pro Review: Not a Trap!",
+    title: "What a play!",
     thumbnail:
-      "https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA",
-    youtubeURL: "https://www.youtube.com/embed/jn9mHzXJIV0",
-    creator: "Marques Brownlee",
+      "https://d3am56o2kzlvb7.cloudfront.net/6856711c-f0ad-4f10-8f4d-711b8183db8c/thumbnails/testvid-01_tumb.0000030.jpg",
+    youtubeURL: "https://d3am56o2kzlvb7.cloudfront.net/6856711c-f0ad-4f10-8f4d-711b8183db8c/mp4/testvid-01_Mp4_Avc_Aac_16x9_1280x720p_24Hz_4.5Mbps_qvbr.mp4",
+    creator: "Football League",
     likes: 0,
     views: 0
   },
