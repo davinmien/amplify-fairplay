@@ -17,8 +17,8 @@ let videos = [
     id: 1,
     title: "What a play!",
     thumbnail:
-      "https://d3am56o2kzlvb7.cloudfront.net/6856711c-f0ad-4f10-8f4d-711b8183db8c/thumbnails/testvid-01_tumb.0000030.jpg",
-    youtubeURL: "https://d3am56o2kzlvb7.cloudfront.net/6856711c-f0ad-4f10-8f4d-711b8183db8c/mp4/testvid-01_Mp4_Avc_Aac_16x9_1280x720p_24Hz_4.5Mbps_qvbr.mp4",
+      "https://d3h2boy01sinnp.cloudfront.net/3b2f83d3-03cc-4935-abf8-cdd54c9dbba4/thumbnails/football-1_tumb.0000004.jpg",
+    youtubeURL: "https://d3h2boy01sinnp.cloudfront.net/3b2f83d3-03cc-4935-abf8-cdd54c9dbba4/mp4/football-1_Mp4_Avc_Aac_16x9_1280x720p_24Hz_4.5Mbps_qvbr.mp4",
     creator: "Football League",
     likes: 7,
     views: 2390
