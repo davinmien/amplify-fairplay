@@ -112,8 +112,6 @@ p{
     font-size:14px;
 }
 .video-player{
-    display:flex;
-    width:1200px;
     margin:auto;
 }
 
